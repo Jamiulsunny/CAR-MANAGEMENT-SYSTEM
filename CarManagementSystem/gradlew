@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Simple gradlew stub: uses local 'gradle' if present.
+if command -v gradle >/dev/null 2>&1; then
+  gradle "$@"
+else
+  echo "gradle not found. Please install Gradle or run with an IDE that provides Gradle support."
+  exit 1
+fi
